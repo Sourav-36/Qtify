@@ -1,0 +1,53 @@
+.navbar {
+  height: 4.625rem;
+  width: 100vw;
+  background-color: var(--css-primary);
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  align-items: center;
+}
+
+.searchBarSpace {
+  width: 35.5rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.inputText {
+  padding: 0.625rem;
+  flex-grow: 1;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  border: 1px var(--css-black) solid;
+}
+
+.searchIcon {
+  width: 4.15rem;
+  height: 3rem;
+  border: 1px var(--css-black) solid;
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  background-color: var(--css-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedbackBtn {
+  min-width: 10.625rem;
+  height: 3rem;
+  border: 1px var(--css-black) solid;
+  border-radius: 0.75rem;
+  background-color: var(--css-black);
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--css-primary);
+  padding: 0.625rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-layout {
+  min-width: 67px;
+  min-height: 34px;
+}

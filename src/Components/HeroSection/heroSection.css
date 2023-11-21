@@ -1,0 +1,31 @@
+.heroBackgroundLayout {
+  background-color: var(--css-black);
+  width: 100vw;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroLayout {
+  min-width: 50rem;
+  height: 212px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heroImage {
+  width: 212px;
+  height: 212px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  width: 556px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: var(--css-white);
+}
