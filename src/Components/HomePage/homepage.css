@@ -1,5 +1,5 @@
 .home {
-  /* background-color: var(--css-black); */
-  width: 100vw;
-  height: 100vh;
+  background-color: var(--css-black);
+  width: 100%;
+  height: fit-content;
 }

@@ -1,0 +1,23 @@
+.albumContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 32px;
+  padding: 10px;
+}
+
+.albumContent {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--css-white);
+  margin-bottom: 18px;
+}
+
+.showCollapse {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--css-primary);
+}

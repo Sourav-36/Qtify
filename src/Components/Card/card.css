@@ -1,0 +1,46 @@
+.cardContainer {
+  width: 159px;
+  height: 232px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImageContainer {
+  width: 159px;
+  height: 205px;
+}
+
+.cardImage {
+  border-radius: 10px 10px 0px 0px;
+  height: 170px;
+  width: 159px;
+  object-fit: cover;
+}
+
+.followersContainer {
+  background-color: var(--css-white);
+  border-radius: 0px 0px 10px 10px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  padding: 0px 6px;
+}
+
+.followersPill {
+  width: fit-content;
+  height: 23px;
+  border-radius: 10px;
+  padding: 4px 8px;
+  background-color: var(--css-black);
+  color: var(--css-white);
+  font-weight: 300;
+  font-size: 10px;
+}
+
+.cardContent {
+  height: 27px;
+  font-size: 14px;
+  color: var(--css-white);
+  display: flex;
+  align-items: flex-end;
+}
