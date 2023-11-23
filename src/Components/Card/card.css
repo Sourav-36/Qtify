@@ -3,9 +3,10 @@
   height: 232px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-.cardImageContainer {
+.cardImageContentContainer {
   width: 159px;
   height: 205px;
 }

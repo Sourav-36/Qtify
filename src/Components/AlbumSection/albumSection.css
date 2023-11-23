@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   row-gap: 32px;
-  padding: 10px;
+  padding: 0px 32px 10px;
 }
 
 .albumContent {
@@ -20,4 +20,15 @@
   font-size: 20px;
   font-weight: 600;
   color: var(--css-primary);
+  background-color: var(--css-black);
+  border: 0;
+  cursor: pointer;
+}
+
+.cardListContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 49px;
+  row-gap: 12px;
 }
