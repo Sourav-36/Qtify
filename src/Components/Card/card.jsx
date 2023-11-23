@@ -7,7 +7,9 @@ const Card = ({ albumData }) => {
         <img src={albumData.image} className="cardImage" />
         <div className="followersContainer">
           <div className="followersPill">
-            <div>{albumData.follows}</div>
+            {albumData.follows !== undefined
+              ? `${albumData.follows} follows`
+              : `${albumData.likes} likes`}
           </div>
         </div>
       </div>

@@ -1,0 +1,35 @@
+.songContainer {
+  width: 100%;
+  height: fit-content;
+  padding: 32px;
+}
+
+.songTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--css-white);
+  margin-bottom: 18px;
+}
+
+.tabContainer {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: var(--css-white);
+  padding: 0px 24px;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 4px var(--css-primary) solid;
+}
+
+.songListContainer {
+  padding: 20px 0px;
+}

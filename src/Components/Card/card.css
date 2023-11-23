@@ -1,6 +1,6 @@
 .cardContainer {
   width: 159px;
-  height: 232px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,9 +39,9 @@
 }
 
 .cardContent {
-  height: 27px;
+  height: 45px;
   font-size: 14px;
   color: var(--css-white);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }

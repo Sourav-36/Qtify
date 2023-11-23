@@ -3,18 +3,17 @@ import Album from "./album.jsx";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const AlbumSection = () => {
-  let ROOT_URL = "https://qtify-backend-labs.crio.do";
+const AlbumSection = ({ url }) => {
   let [topAlbums, setTopAlbums] = useState([]);
   let [newAlbums, setNewAlbums] = useState([]);
 
   let getTopAlbums = async () => {
-    let resp = await axios.get(ROOT_URL + "/albums/top");
+    let resp = await axios.get(url + "/albums/top");
     return resp.data;
   };
 
   let getNewAlbums = async () => {
-    let resp = await axios.get(ROOT_URL + "/albums/new");
+    let resp = await axios.get(url + "/albums/new");
     return resp.data;
   };
 
