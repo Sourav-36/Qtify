@@ -11,7 +11,7 @@ const Carousel = ({ data }) => {
   return (
     <Swiper
       slidesPerView={7}
-      columnGap={40}
+      spaceBetween={40}
       navigation={true}
       loop={true}
       modules={[Navigation]}

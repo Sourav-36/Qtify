@@ -11,7 +11,6 @@ const Faq = ({ url }) => {
   useEffect(() => {
     (async () => {
       let resFaq = await axios.get(url + "/faq");
-      console.log(resFaq);
       let res = await resFaq.data;
       setFaqs(res.data);
     })();
@@ -23,7 +22,7 @@ const Faq = ({ url }) => {
         {faqs.map((faq, ind) => (
           <Accordion
             key={ind}
-            sx={{ borderRadius: "0px 0px 10px 10px", margin: "10px 0px" }}
+            sx={{ borderRadius: "10px 10px 10px 10px", margin: "16px 0px" }}
           >
             <AccordionSummary
               sx={{
