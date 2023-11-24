@@ -3,6 +3,7 @@ import Navbar from "../Navbar/navbar.jsx";
 import HeroSection from "../HeroSection/heroSection.jsx";
 import AlbumSection from "../AlbumSection/albumSection.jsx";
 import SongSection from "../SongSection/songSection.jsx";
+import Faq from "../Faq/faq.jsx";
 
 const HomePage = () => {
   let ROOT_URL = "https://qtify-backend-labs.crio.do";
@@ -12,6 +13,7 @@ const HomePage = () => {
       <HeroSection />
       <AlbumSection url={ROOT_URL} />
       <SongSection url={ROOT_URL} />
+      <Faq url={ROOT_URL} />
     </div>
   );
 };

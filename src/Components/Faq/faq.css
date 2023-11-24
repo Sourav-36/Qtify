@@ -1,0 +1,16 @@
+.faqContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.faqTitle {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--css-white);
+  margin-bottom: 16px;
+}
