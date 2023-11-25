@@ -4,6 +4,7 @@
   padding: 24px 32px;
   border-top: 1px var(--css-primary) solid;
   display: flex;
+  background-color: var(--css-black);
 }
 
 .contentFooterContainer {

@@ -23,7 +23,9 @@ const HomePage = () => {
       <AlbumSection url={ROOT_URL} />
       <SongSection url={ROOT_URL} />
       <Faq url={ROOT_URL} />
-      <Footer />
+      <div style={{ position: "sticky", bottom: "0", zIndex: "2" }}>
+        <Footer />
+      </div>
     </div>
   );
 };
