@@ -5,8 +5,8 @@ import axios from "axios";
 
 const SongSection = ({ url }) => {
   let [value, setValue] = useState("0");
-  let [songsData, setSongsData] = useState([]);
   let genres = ["rock", "pop", "jazz", "blues"];
+  let [songsData, setSongsData] = useState([]);
   let getSongs = async () => {
     let resp = await axios.get(url + "/songs");
     return resp.data;

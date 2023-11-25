@@ -1,0 +1,49 @@
+.footerContainer {
+  width: 100%;
+  height: fit-content;
+  padding: 24px 32px;
+  border-top: 1px var(--css-primary) solid;
+  display: flex;
+}
+
+.contentFooterContainer {
+  display: flex;
+  width: 16.67%;
+  height: 82px;
+}
+
+.imageFooterContainer {
+  height: 100%;
+  width: 43%;
+}
+
+.imageFooterContainer img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.textFooterContainer {
+  width: 57%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8px;
+  color: var(--css-white);
+}
+
+.sliderFooterContainer {
+  width: 83.33%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sliderFooterWrapper {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
