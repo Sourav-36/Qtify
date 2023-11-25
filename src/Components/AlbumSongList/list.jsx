@@ -53,6 +53,7 @@ const AlbumSongList = ({ text, url }) => {
                   key={`${id1}${id2}`}
                   albumData={obj}
                   artist={song.artists}
+                  image={song.image}
                 />
               ))
             )

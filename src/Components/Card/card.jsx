@@ -1,7 +1,8 @@
 import "./card.css";
+import Tooltip from "@mui/material/Tooltip";
 
 const Card = ({ albumData }) => {
-  return (
+  let card = (
     <div className="cardContainer">
       <div className="cardImageContentContainer">
         <img src={albumData.image} className="cardImage" />
@@ -15,6 +16,22 @@ const Card = ({ albumData }) => {
       </div>
       <div className="cardContent">{albumData.title}</div>
     </div>
+  );
+  return (
+    <>
+      {albumData.follows !== undefined ? (
+        <Tooltip
+          key={albumData.id}
+          title={`${albumData.songs.length} songs`}
+          placement="top"
+          arrow
+        >
+          {card}
+        </Tooltip>
+      ) : (
+        <>{card}</>
+      )}
+    </>
   );
 };
 
