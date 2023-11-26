@@ -1,5 +1,5 @@
 .navbar {
-  height: 4.625rem;
+  height: 74px;
   width: 100%;
   background-color: var(--css-primary);
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 .searchBarSpace {
-  width: 35.5rem;
+  width: 39.4%;
   height: 3rem;
   display: flex;
   flex-direction: row;
@@ -18,12 +18,13 @@
 .inputText {
   padding: 0.625rem;
   flex-grow: 1;
+  width: 34.86%;
   border-radius: 0.5rem 0rem 0rem 0.5rem;
   border: 1px var(--css-black) solid;
 }
 
 .searchIcon {
-  width: 4.15rem;
+  width: 11.6%;
   height: 3rem;
   border: 1px var(--css-black) solid;
   border-radius: 0rem 0.5rem 0.5rem 0rem;
@@ -34,7 +35,7 @@
 }
 
 .feedbackBtn {
-  min-width: 10.625rem;
+  width: 11.8%;
   height: 3rem;
   border: 1px var(--css-black) solid;
   border-radius: 0.75rem;
@@ -45,6 +46,7 @@
   padding: 0.625rem 1rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .logo-layout {

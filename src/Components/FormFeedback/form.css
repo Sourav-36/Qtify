@@ -1,0 +1,7 @@
+.formContainer {
+  width: 526px;
+  height: 524px;
+  background-color: var(--css-white);
+  position: absolute;
+  z-index: 5;
+}

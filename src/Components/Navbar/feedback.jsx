@@ -1,7 +1,11 @@
 import "./navbar.css";
 
-const Feedback = ({ children }) => {
-  return <button className="feedbackBtn">{children}</button>;
+const Feedback = ({ children, isFeedbackBtnClicked }) => {
+  return (
+    <button className="feedbackBtn" onClick={isFeedbackBtnClicked}>
+      {children}
+    </button>
+  );
 };
 
 export default Feedback;

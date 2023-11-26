@@ -6,18 +6,46 @@ import AlbumSection from "../AlbumSection/albumSection.jsx";
 import SongSection from "../SongSection/songSection.jsx";
 import Faq from "../Faq/faq.jsx";
 import Footer from "../Footer/footer.jsx";
+import FormFeedback from "../FormFeedback/form.jsx";
 import { useState } from "react";
 
 const HomePage = () => {
   let ROOT_URL = "https://qtify-backend-labs.crio.do";
   let [text, setText] = useState("");
+  let [clickFeedbackBtn, setClickFeedbackBtn] = useState(false);
   let handleChange = (e) => {
     setText(e.target.value);
   };
 
+  let handleClick = () => {
+    setClickFeedbackBtn(!clickFeedbackBtn);
+  };
+
   return (
     <div className="home">
-      <Navbar text={text} handleChange={handleChange} />
+      {/* {clickFeedbackBtn ? (
+        <div
+          style={{
+            position: "absolute",
+            zIndex: "4",
+            backgroundColor: "var(--css-black)",
+            opacity: "90%",
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <FormFeedback clickFeedbackBtn={clickFeedbackBtn} />
+        </div>
+      ) : (
+        <></>
+      )} */}
+      <Navbar
+        text={text}
+        handleChange={handleChange}
+        isFeedbackBtnClicked={handleClick}
+      />
       {text !== "" ? <AlbumSongList text={text} url={ROOT_URL} /> : <></>}
       <HeroSection />
       <AlbumSection url={ROOT_URL} />

@@ -3,7 +3,7 @@ import "./navbar.css";
 const SearchBarBox = ({ text, handleChange }) => {
   return (
     <>
-      <form className="searchBarSpace">
+      <div className="searchBarSpace">
         <input
           className="inputText"
           placeholder="Search an album of your choice"
@@ -13,7 +13,7 @@ const SearchBarBox = ({ text, handleChange }) => {
         <button className="searchIcon">
           <img src="./search_icon.png" />
         </button>
-      </form>
+      </div>
     </>
   );
 };
