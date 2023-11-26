@@ -6,8 +6,12 @@ const HeroSection = () => {
       <div className="heroWrapper">
         <div className="heroTextContainer">
           <div className="heroText">
-            <div>100 Thousand songs, ad free</div>
-            <div>Over thousands podcast episodes</div>
+            <div style={{ textAlign: "center" }}>
+              100 Thousand songs, ad free
+            </div>
+            <div style={{ textAlign: "center" }}>
+              Over thousands podcast episodes
+            </div>
           </div>
         </div>
         <div className="heroImageContainer">
