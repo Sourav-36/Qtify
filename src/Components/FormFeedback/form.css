@@ -4,6 +4,8 @@
   background-color: var(--css-white);
   border-radius: 10px;
   padding: 32px;
+  position: absolute;
+  z-index: 4;
 }
 
 .formContentWrapper {

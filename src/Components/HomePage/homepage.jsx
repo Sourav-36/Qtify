@@ -24,7 +24,7 @@ const HomePage = () => {
   return (
     <div className="home">
       {clickFeedbackBtn ? (
-        <div onClick={handleClick}>
+        <>
           <div
             style={{
               position: "absolute",
@@ -34,21 +34,21 @@ const HomePage = () => {
               width: "100%",
               height: "100%",
             }}
+            onClick={handleClick}
           ></div>
-          <div style={{ position: "sticky", top: "30", zIndex: "4" }}>
-            <div
-              style={{
-                position: "absolute",
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-                top: "100px",
-              }}
-            >
-              <FormFeedback isFeedbackBtnClicked={handleClick} />
-            </div>
+          <div
+            style={{
+              position: "sticky",
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              top: "100px",
+              zIndex: "4",
+            }}
+          >
+            <FormFeedback isFeedbackBtnClicked={handleClick} />
           </div>
-        </div>
+        </>
       ) : (
         <></>
       )}
