@@ -8,6 +8,12 @@
   z-index: 4;
 }
 
+@media (width < 576px) {
+  .formContainer {
+    width: -webkit-fill-available;
+  }
+}
+
 .formContentWrapper {
   width: 100%;
   display: flex;
@@ -20,6 +26,7 @@
   flex-direction: column;
   row-gap: 32px;
   flex-grow: 1;
+  width: 100%;
 }
 
 .title {
@@ -31,6 +38,7 @@
 
 .formTitle {
   display: flex;
+  width: 100%;
 }
 
 .closeBtn {
@@ -61,6 +69,7 @@
   border: 1px var(--css-primary) solid;
   padding-left: 12px;
   height: 38px;
+  width: 100%;
 }
 
 .textareaInput {
