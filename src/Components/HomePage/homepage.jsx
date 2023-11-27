@@ -23,24 +23,35 @@ const HomePage = () => {
 
   return (
     <div className="home">
-      {/* {clickFeedbackBtn ? (
-        <div
-          style={{
-            position: "absolute",
-            zIndex: "4",
-            backgroundColor: "var(--css-black)",
-            opacity: "90%",
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <FormFeedback clickFeedbackBtn={clickFeedbackBtn} />
+      {clickFeedbackBtn ? (
+        <div onClick={handleClick}>
+          <div
+            style={{
+              position: "absolute",
+              zIndex: "3",
+              backgroundColor: "var(--css-black)",
+              opacity: "90%",
+              width: "100%",
+              height: "100%",
+            }}
+          ></div>
+          <div style={{ position: "sticky", top: "30", zIndex: "4" }}>
+            <div
+              style={{
+                position: "absolute",
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                top: "100px",
+              }}
+            >
+              <FormFeedback isFeedbackBtnClicked={handleClick} />
+            </div>
+          </div>
         </div>
       ) : (
         <></>
-      )} */}
+      )}
       <Navbar
         text={text}
         handleChange={handleChange}
