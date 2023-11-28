@@ -1,0 +1,6 @@
+.playlistHome {
+  background-color: var(--css-black);
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}

@@ -1,15 +1,11 @@
-import "./homepage.css";
+import "./playlist.css";
 import Navbar from "../Navbar/navbar.jsx";
-import AlbumSongList from "../AlbumSongList/list.jsx";
-import HeroSection from "../HeroSection/heroSection.jsx";
-import AlbumSection from "../AlbumSection/albumSection.jsx";
-import SongSection from "../SongSection/songSection.jsx";
-import Faq from "../Faq/faq.jsx";
 import Footer from "../Footer/footer.jsx";
+import AlbumSongList from "../AlbumSongList/list.jsx";
 import FormFeedback from "../FormFeedback/form.jsx";
 import { useState } from "react";
 
-const HomePage = () => {
+const Playlist = () => {
   let ROOT_URL = "https://qtify-backend-labs.crio.do";
   let [text, setText] = useState("");
   let [clickFeedbackBtn, setClickFeedbackBtn] = useState(false);
@@ -20,9 +16,8 @@ const HomePage = () => {
   let handleClick = () => {
     setClickFeedbackBtn(!clickFeedbackBtn);
   };
-
   return (
-    <div className="home">
+    <div className="playlistHome">
       {clickFeedbackBtn ? (
         <>
           <div
@@ -58,10 +53,13 @@ const HomePage = () => {
         isFeedbackBtnClicked={handleClick}
       />
       {text !== "" ? <AlbumSongList text={text} url={ROOT_URL} /> : <></>}
-      <HeroSection />
-      <AlbumSection url={ROOT_URL} />
-      <SongSection url={ROOT_URL} />
-      <Faq url={ROOT_URL} />
+      <div
+        style={{
+          height: "800px",
+          width: "100%",
+          backgroundColor: "var(--css-black)",
+        }}
+      ></div>
       <div style={{ position: "sticky", bottom: "0", zIndex: "2" }}>
         <Footer />
       </div>
@@ -69,4 +67,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Playlist;

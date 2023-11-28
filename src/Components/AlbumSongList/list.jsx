@@ -5,7 +5,6 @@ import ListCard from "./listCard.jsx";
 
 const AlbumSongList = ({ text, url }) => {
   let [list, setList] = useState([]);
-  console.log(list);
 
   let getTopAlbums = async () => {
     let resp = await axios.get(url + "/albums/top");
