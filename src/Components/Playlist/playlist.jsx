@@ -9,7 +9,7 @@ import { useLocation } from "react-router-dom";
 const Playlist = () => {
   let ROOT_URL = "https://qtify-backend-labs.crio.do";
   let [text, setText] = useState("");
-  let location = useLocation().state;
+  // let location = useLocation().state;
   // console.log(location);
   let [clickFeedbackBtn, setClickFeedbackBtn] = useState(false);
   let handleChange = (e) => {
@@ -58,13 +58,13 @@ const Playlist = () => {
       {text !== "" ? <AlbumSongList text={text} url={ROOT_URL} /> : <></>}
       <div
         style={{
-          height: "fit-content",
+          height: "800px",
           width: "100%",
           backgroundColor: "var(--css-black)",
           color: "var(--css-white)",
         }}
       >
-        {location.albumData.songs.map((song) => song.title)}
+        {/* {location.albumData.songs.map((song) => song.title)} */}
       </div>
       <div style={{ position: "sticky", bottom: "0", zIndex: "2" }}>
         <Footer />
