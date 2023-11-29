@@ -5,7 +5,7 @@ const ListCard = ({ albumData, artist, image }) => {
   return (
     <div className="cardList">
       <div className="imageContainer">
-        <img src={image} />
+        <img src={image} alt="Img not available" />
       </div>
       <div className="contentContainer">
         <div className="textContainer">

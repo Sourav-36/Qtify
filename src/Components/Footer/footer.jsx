@@ -17,7 +17,7 @@ const Footer = () => {
     <div className="footerContainer">
       <div className="contentFooterContainer">
         <div className="imageFooterContainer">
-          <img src="album_image.png" />
+          <img src="album_image.png" alt="Img not available" />
         </div>
         <div className="textFooterContainer">
           <div>Song Name</div>

@@ -15,7 +15,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="heroImageContainer">
-          <img src="./vibrating_headphone.png" />
+          <img src="./vibrating_headphone.png" alt="Img not available" />
         </div>
       </div>
     </div>

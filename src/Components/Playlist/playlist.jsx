@@ -4,10 +4,13 @@ import Footer from "../Footer/footer.jsx";
 import AlbumSongList from "../AlbumSongList/list.jsx";
 import FormFeedback from "../FormFeedback/form.jsx";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const Playlist = () => {
   let ROOT_URL = "https://qtify-backend-labs.crio.do";
   let [text, setText] = useState("");
+  let location = useLocation().state;
+  // console.log(location);
   let [clickFeedbackBtn, setClickFeedbackBtn] = useState(false);
   let handleChange = (e) => {
     setText(e.target.value);
@@ -55,11 +58,14 @@ const Playlist = () => {
       {text !== "" ? <AlbumSongList text={text} url={ROOT_URL} /> : <></>}
       <div
         style={{
-          height: "800px",
+          height: "fit-content",
           width: "100%",
           backgroundColor: "var(--css-black)",
+          color: "var(--css-white)",
         }}
-      ></div>
+      >
+        {location.albumData.songs.map((song) => song.title)}
+      </div>
       <div style={{ position: "sticky", bottom: "0", zIndex: "2" }}>
         <Footer />
       </div>

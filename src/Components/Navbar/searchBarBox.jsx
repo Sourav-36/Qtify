@@ -11,7 +11,7 @@ const SearchBarBox = ({ text, handleChange }) => {
           onChange={handleChange}
         />
         <button className="searchIcon">
-          <img src="./search_icon.png" />
+          <img src="./search_icon.png" alt="Img not available" />
         </button>
       </div>
     </>
